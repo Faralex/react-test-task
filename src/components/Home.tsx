@@ -27,10 +27,6 @@ export default function Home() {
     setSelected(i);
   }
 
-  function eventT(e: any) {
-    console.log(e.target.value);
-  }
-
   const nPages = Math.ceil(total / per_page);
 
   return (
