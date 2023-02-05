@@ -5,7 +5,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ""}>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
