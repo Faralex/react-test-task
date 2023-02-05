@@ -20,14 +20,14 @@ export default function Home() {
     searchParams
   );
 
+  const nPages = Math.ceil(total / per_page);
+
   function toggle(i: any) {
     if (selected === i) {
       return setSelected(null);
     }
     setSelected(i);
   }
-
-  const nPages = Math.ceil(total / per_page);
 
   return (
     <>
