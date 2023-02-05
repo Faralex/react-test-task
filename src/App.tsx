@@ -5,7 +5,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <BrowserRouter basename="/react-test">
+    <BrowserRouter basename="/react-test-task">
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
