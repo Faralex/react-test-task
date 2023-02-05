@@ -20,12 +20,16 @@ export default function Home() {
     searchParams
   );
 
-  const toggle = (i: number) => {
+  function toggle(i: any) {
     if (selected === i) {
       return setSelected(null);
     }
     setSelected(i);
-  };
+  }
+
+  function eventT(e: any) {
+    console.log(e.target.value);
+  }
 
   const nPages = Math.ceil(total / per_page);
 
@@ -49,7 +53,7 @@ export default function Home() {
               style={{ backgroundColor: item.color }}
             >
               Id: {item.id}. Name: {item.name}. Year: {item.year}
-              <h1 key={item.id}>
+              <h1 className="item-info" key={item.id}>
                 {selected === i
                   ? `Id: ${item.id}, Name: ${item.name}, Year: ${item.year} Pantone value: ${item.pantone_value}`
                   : ""}

@@ -42,7 +42,6 @@
   list-style-type: none;
   font-size: 30px;
   cursor: pointer;
-  padding-bottom: 20px;
 }
 
 .ul-list {
@@ -61,13 +60,6 @@
 
 .li-flex {
   color: red;
-}
-
-.lul {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
 .input-list {
@@ -95,4 +87,9 @@
 
 .page-prev {
   margin-right: 10px;
+}
+
+.item-info {
+  background-color: white;
+  color: black;
 }
